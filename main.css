@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header {
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin: 45px auto 0px auto;
+}
+footer {
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin: 0px auto 45px auto;
+}
+#sumWidget {
+    width: 300px;
+    padding: 25px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#userInput {
+    margin: 0px 0px 25px 0px;
+    border: 1px solid black;
+}
+#output {
+    font-size: 100px;
+    max-width: 300px;
+    word-break: break-all;
+    text-align: center;
+}
+#instructions {
+    margin-top: 25px;;
+    text-align: center;
+}
