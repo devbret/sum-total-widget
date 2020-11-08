@@ -6,14 +6,14 @@ function main() {
     userInput.addEventListener(`input`, function(){
         //Spliting the user input into an array.
         const data = userInput.value.split(``);
-        //Making sure that all of the values in the "data" variable can be converted to numbers.
-        if (data.some(d => isNaN(d))) {
-            //If the input contains characters other than numbers, the user is reminded to only input number values.
+        //Making sure that all of the values in the "data" variable can be converted to numbers and are not empty spaces.
+        if (data.some(d => isNaN(d)) && data.some(d => d === ` `)) {
+            //If the input contains characters other than numbers, the user is reminded to only input whole numeric values.
             output.textContent = `Please only enter numbers.`;
             output.style.fontSize = `18px`;
             return;
         }
-        //If all of the values in the data variable are numbers, the program then adds them together (as they are being typed) and displays them via the output text.
+        //If all of the values in the "data" variable are numbers, the program then adds them together (as they are being typed) and displays them via the output text.
         output.textContent = data.reduce((total,d) => {
             total += Number(d);
             return total;
