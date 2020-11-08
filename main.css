@@ -27,7 +27,14 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+#inputInterface {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #userInput {
+    width: 90%;
     margin: 0px 0px 25px 0px;
     border: 1px solid black;
 }
@@ -36,6 +43,7 @@ footer {
     max-width: 300px;
     word-break: break-all;
     text-align: center;
+    font-weight: bolder;
 }
 #instructions {
     margin-top: 25px;;
